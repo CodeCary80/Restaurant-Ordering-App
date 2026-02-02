@@ -211,8 +211,66 @@ header p{
     background: #13c589;
 }
 
+.combo-alert {
+    background: #FEF3C7;
+    border: 2px solid #F59E0B;
+    border-radius: 5px;
+    padding: 12px;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #92400E;
+}
+
+.price-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    color: #6B7280;
+}
+
+.price-line.discount {
+    color: #059669;
+    font-weight: bold;
+}
+
+.rating-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #D1FAE5;
+}
+
+.rating-section p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #065F46;
+}
+
+.stars {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.stars i {
+    font-size: 2.5rem;
+    color: #D1D5DB;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.stars i:hover {
+    transform: scale(1.2);
+    color: #FCD34D;
+}
+
+.stars i.filled {
+    color: #F59E0B;
+}
+
 .success-message {
     background: #ECFDF5;
+    border: 3px solid #16DB99;
     border-radius: 5px;
     padding: 40px;
     text-align: center;
@@ -223,4 +281,9 @@ header p{
     color: #065F46;
     margin: 0;
     font-size: 1.5rem;
+}
+
+.success-message p {
+    color: #065F46;
+    margin-top: 10px;
 }

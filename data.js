@@ -29,3 +29,16 @@ export const menuArray = [
     },
 
 ]
+
+export const combos = [
+    {
+        name:"Sweet Duo",
+        items:[0,1],
+        discount:0.5
+    },
+    {
+        name:"Classic Combo",
+        items:[1,2],
+        discount:0.5
+    },
+]

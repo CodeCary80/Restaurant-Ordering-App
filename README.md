@@ -1,19 +1,48 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# 🍦 Gelato & Chill - Restaurant Order App
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+A simple vanilla JavaScript restaurant ordering application where customers can browse menu items, add them to their cart, apply combo deals, complete payment, and rate their experience.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+## Features
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+- **Browse Menu** - View all available gelato items with images, descriptions, and prices
+- **Add to Cart** - Click the + button to add items to your order
+- **Remove Items** - Remove unwanted items from your cart
+- **Combo Deals** - Automatically get 50% off when ordering specific item combinations
+- **Payment Modal** - Secure payment form with card details
+- **Star Rating** - Rate your experience with an interactive 5-star system
 
-Happy Coding!
+## Combo Deals
+
+- **Sweet Duo**: Caramel + Chocolate Ice Cream (50% off)
+- **Classic Combo**: Chocolate + Vanilla Ice Cream (50% off)
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- Vanilla JavaScript (ES6 Modules)
+- Font Awesome Icons
+- Google Fonts (Nunito Sans & Quicksand)
+
+
+## Project Highlights
+
+This project demonstrates:
+- DOM manipulation
+- Event delegation with data attributes
+- Array methods (map, filter, find, reduce, every)
+- Modal overlays
+- Dynamic pricing calculations
+- Interactive UI elements
+
+## Future Improvements
+
+- Add local storage to save orders
+- Implement more combo deals
+- Add item quantity counter
+- Include order history
+- Add animations and transitions
+
+---
+
+Built with ❤️ using Vanilla JavaScript
