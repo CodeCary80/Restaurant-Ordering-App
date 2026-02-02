@@ -2,6 +2,8 @@
 
 A simple vanilla JavaScript restaurant ordering application where customers can browse menu items, add them to their cart, apply combo deals, complete payment, and rate their experience.
 
+Live: https://gelatoandchill.netlify.app/
+
 ## Features
 
 - **Browse Menu** - View all available gelato items with images, descriptions, and prices
