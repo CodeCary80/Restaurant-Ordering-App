@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+} 
+
+h2, h3,p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400; 
+}
+
+.container{
+    width: 900px;
+    height: 100vh;
+    margin: auto;
+}
+
+header{
+    height: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+header  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 15%;
+    z-index: 0;
+    position: absolute;
+}
+
+header h1,
+header p{
+    color: black;
+    margin: 0;
+    z-index: 1;
+}
+
+header h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-size: 1.1rem;
+}
+
+.menu{
+    width: 90%;
+    margin: auto;
+}
+
+.menu p{
+    color: #8B8B8B;
+}
+
+.menu-section{
+    display: flex;
+    gap: 30px;
+    padding: 40px 20px;
+    border-bottom: 1px solid #D2D2D2;
+    justify-content: space-between;
+}
+
+.menu-section img{
+    height: 140px
+}
+
+.item{
+    display: flex;
+    gap: 20px;
+}
+
+.fa-circle-plus{
+    font-size: 3rem;
+    margin: auto 0;
+    transition: transform 0.2s;
+}
+
+.fa-circle-plus:hover{
+    transform: scale(1.1);
+}
+
+.hidden{
+    display: none;
+}
+
+.check-section{
+    padding: 10px 45px;
+}
+
+.order-title{
+    text-align: center;
+}
+
+.order-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-price {
+    margin: 20px auto;
+    padding: 10px 0 60px 0;  
+}
+
+.order-price{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+}
+
+.remove-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #8B8B8B ;
+    font-size: 1rem;
+}
+
+.total-line{
+    border-top: 1px solid #393333;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+
+.complete-order-btn{
+    width: 100%;
+    padding: 18px;
+    background: #16DB99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.modal-form{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.form{
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+}
+
+.form h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.form input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #D2D2D2;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family:'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+
+.form input:focus{
+    outline: none;
+    border-color: #16db99;
+}
+
+.form button[data-pay]{
+    width: 100%;
+    padding: 18px;
+    background: #16db99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family:'Quicksand', sans-serif;
+}
+
+.form button{
+    background: #13c589;
+}
+
+.success-message {
+    background: #ECFDF5;
+    border-radius: 5px;
+    padding: 40px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.success-message h2 {
+    color: #065F46;
+    margin: 0;
+    font-size: 1.5rem;
+}
