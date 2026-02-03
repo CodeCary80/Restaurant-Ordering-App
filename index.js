@@ -19,13 +19,15 @@ document.addEventListener('click', (e)=>{
         closeModal()
     }
 
-    if(e.target.dataset.pay !== undefined){
-        e.preventDefault()
-        handlePayment()
-    }
-
     if(e.target.dataset.star !== undefined){
         handleStarRating(e.target.dataset.star)
+    }
+})
+
+document.addEventListener('submit',(e)=>{
+    if(e.target.id === 'payment-form'){
+        e.preventDefault()
+        getPayment()
     }
 })
 
@@ -157,9 +159,9 @@ function getPayment(){
         <form id="payment-form">
             <h2>Enter card details</h2>
             <input type="text" name="name" id="name" placeholder="Enter your name" required>
-            <input type="text" name="card-number" id="card-number" placeholder="Enter card number" required>
-            <input type="text" name="cvv" id="cvv" placeholder="Enter CVV" required>
-            <button type="button" data-pay>Pay</button>
+            <input type="text" name="card-number" id="card-number" maxlength="16" minlength="16" pattern="[0-9]{16}" inputmode="numeric" placeholder="Enter card number" required>
+            <input type="text" name="cvv" id="cvv" maxlength="4" minlength="3" pattern="[0-9]{3}" inputmode="numeric" placeholder="Enter CVV" required>
+            <button type="submit" data-pay>Pay</button>
         </form>
     </section>
     `
