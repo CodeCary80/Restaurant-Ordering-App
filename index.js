@@ -27,7 +27,7 @@ document.addEventListener('click', (e)=>{
 document.addEventListener('submit',(e)=>{
     if(e.target.id === 'payment-form'){
         e.preventDefault()
-        getPayment()
+        handlePayment()
     }
 })
 
